@@ -2902,16 +2902,26 @@ input, select, textarea {
 	}
 
 		.split > * {
-			width: calc(50% - 2.5em);
-		}
-
-		.split > :nth-child(2n - 1) {
-			padding-right: 2.5em;
+			/* width: calc(50% - 2.5em); */
+			width: auto;
 			border-right: solid 1px rgba(255, 255, 255, 0.15);
+
 		}
 
-		.split > :nth-child(2n) {
+		.split > :nth-child(0){
 			padding-left: 2.5em;
+		}
+
+		.split > :nth-child(n+2) {
+			padding-right: 40px;
+			padding-left: 40px;
+		}
+
+		/* .split > :nth-child(2n) {
+			padding-left: 2.5em;
+		} */
+		.split > :last-child{
+			border-right: none;
 		}
 
 		.split.style1 > :nth-child(2n - 1) {
